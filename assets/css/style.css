@@ -22,7 +22,7 @@ body {
 	width: 100%;
 	max-width: 1600px;
 	background: #fff;
-	margin: 0;
+	margin: 0 auto;
 	display: flex;
 	flex-direction: column;
 }
@@ -182,8 +182,9 @@ main {
 }
 
 .text-box p {
-	font-size: 18.5px;
-	font-weight: 500;
+	font-size: 18.4px;
+	font-weight: normal;
+	line-height: 1.5;
 }
 
 .full-text-box {
@@ -238,7 +239,7 @@ main {
 
 .img-duo-container {
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 	align-items: center;
 	width: 100%;
 	margin: 0;
@@ -311,7 +312,8 @@ main {
 .img-trio .trio-duo {
 	width: 50%;
 	display: flex;
-	flex-flow: row wrap;
+	flex-direction: column;
+	align-items: center;
 	margin: 0 3vw 0 0;
 	/*as images are not changing on different screen*/
 }
@@ -331,6 +333,25 @@ main {
 
 .img-trio img {
 	width: 100%;
+}
+
+.img-header{
+	display: flex;
+	width: 90%;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-items: center;
+	margin: 16px 0;
+}
+
+.img-header figure{
+	width: 100%;
+	height: auto;
+}
+
+.img-header img{
+	width: 100%;
+	object-fit: cover;
 }
 
 .img-square-duo {
@@ -445,7 +466,7 @@ footer {
 }
 
 .footer-container .section {
-	height: 25vw;
+	/* height: 25vw; */
 	margin: 16px 16px 0 0;
 }
 
@@ -835,7 +856,6 @@ footer {
 		flex-flow: column wrap;
 		justify-content: flex-start;
 		align-items: flex-start;
-
 	}
 
 	.top-navbar img {
